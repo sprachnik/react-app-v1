@@ -12,7 +12,9 @@ const Page = ({ isNav = true, children }) => {
 };
 
 const Wrapper = styled.div`
-  background: "#ccc";
+  background: #666;
+  width: 100%;
+  height: 100%;
 `;
 
 export default Page;

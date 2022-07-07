@@ -1,11 +1,27 @@
 import { Box, Paper, Typography } from "@mui/material";
+import styled from "styled-components";
+import { PropagateLoader } from "react-spinners";
 
-const SearchResult = (props) => {
+const SearchResult = ({ loading, data, error }) => {
   return (
     <Box>
-      <Paper elevation={3}>Result!</Paper>
+      <ResultWrapper elevation={3}>
+        <Loader loading={loading} color="blue" />
+      </ResultWrapper>
     </Box>
   );
 };
+
+const ResultWrapper = styled(Paper)`
+  padding: 20px;
+  background-color: #ccc !important;
+  display: flex;
+  flex-direction: row;
+`;
+
+const Loader = styled(PropagateLoader)`
+  margin: 0 auto;
+  padding: 20px;
+`;
 
 export default SearchResult;
