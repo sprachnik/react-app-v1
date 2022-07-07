@@ -1,23 +1,11 @@
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-  Link,
-  Redirect,
-  useLocation,
-  useParams,
-} from "react-router-dom";
+import { BrowserRouter as Router } from "react-router-dom";
 
-import AboutPage from "./pages/about/AboutPage";
+import Routes from "./Routes";
 
 function App() {
   return (
     <Router>
-      <Routes>
-        <Route path="/about" element={<AboutPage />} />
-        <Route path="/users" element={<>Users</>} />
-        <Route path="*" element={<>Wildcard</>} />
-      </Routes>
+      <Routes />
     </Router>
   );
 }
