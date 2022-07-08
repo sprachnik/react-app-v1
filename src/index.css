@@ -16,3 +16,54 @@ code {
 #root {
   height: 100%;
 }
+
+#ikigaiRoot {
+  font-family: itc-avant-garde-gothic-pro, "Roboto", "Oxygen", "Ubuntu",
+    "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+}
+
+h6 {
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: itc-avant-garde-gothic-pro;
+  src: url(https://use.typekit.net/af/6161d4/00000000000000007735ba1e/30/l?subset_id=2&fvd=n5&v=3)
+      format("woff2"),
+    url(https://use.typekit.net/af/6161d4/00000000000000007735ba1e/30/d?subset_id=2&fvd=n5&v=3)
+      format("woff"),
+    url(https://use.typekit.net/af/6161d4/00000000000000007735ba1e/30/a?subset_id=2&fvd=n5&v=3)
+      format("opentype");
+  font-weight: 200;
+  font-style: normal;
+  font-stretch: normal;
+  font-display: auto;
+}
+
+@font-face {
+  font-family: itc-avant-garde-gothic-pro;
+  src: url(https://use.typekit.net/af/6161d4/00000000000000007735ba1e/30/l?subset_id=2&fvd=n5&v=3)
+      format("woff2"),
+    url(https://use.typekit.net/af/6161d4/00000000000000007735ba1e/30/d?subset_id=2&fvd=n5&v=3)
+      format("woff"),
+    url(https://use.typekit.net/af/6161d4/00000000000000007735ba1e/30/a?subset_id=2&fvd=n5&v=3)
+      format("opentype");
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  font-display: auto;
+}
+
+@font-face {
+  font-family: itc-avant-garde-gothic-pro;
+  src: url(https://use.typekit.net/af/578a9d/00000000000000007735ba14/30/l?subset_id=2&fvd=n7&v=3)
+      format("woff2"),
+    url(https://use.typekit.net/af/578a9d/00000000000000007735ba14/30/d?subset_id=2&fvd=n7&v=3)
+      format("woff"),
+    url(https://use.typekit.net/af/578a9d/00000000000000007735ba14/30/a?subset_id=2&fvd=n7&v=3)
+      format("opentype");
+  font-weight: 700;
+  font-style: normal;
+  font-stretch: normal;
+  font-display: auto;
+}

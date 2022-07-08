@@ -15,8 +15,8 @@ import MovieIcon from "@mui/icons-material/Movie";
 import { useNavigate } from "react-router-dom";
 
 const pages = [
-  { label: "Home", link: "/" },
-  { label: "Search", link: "/search" },
+  { label: "Search", link: "/" },
+  { label: "Ikigai", link: "/ikigai" },
 ];
 const settings = ["..."];
 

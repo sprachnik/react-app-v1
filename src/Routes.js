@@ -1,20 +1,20 @@
 import { Routes as RouterRoutes, Route } from "react-router-dom";
 import SearchPage from "./pages/search/SearchPage";
-import HomePage from "./pages/home/HomePage";
+import IkigaiDemoPage from "./pages/ikigaiDemo/IkigaiDemoPage";
 import RoutePage from "./RoutePage";
 
 const Routes = ({ ...props }) => {
   return (
     <RouterRoutes>
       <Route
-        path="/search"
+        path="/"
         element={
           <RoutePage>
             <SearchPage />
           </RoutePage>
         }
       />
-      <Route path="*" element={<HomePage />} />
+      <Route path="/ikigai" element={<IkigaiDemoPage />} />
     </RouterRoutes>
   );
 };
