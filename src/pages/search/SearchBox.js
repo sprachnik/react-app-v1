@@ -33,8 +33,8 @@ const SearchBox = ({ onSubmit, params = null, ...props }) => {
         initialValues={params}
         validate={(values) => {
           const errors = {};
-          if (!values.t) {
-            errors.t = "Please enter a movie title...";
+          if (!values.s) {
+            errors.s = "Please enter a movie title...";
           }
           return errors;
         }}
@@ -42,7 +42,7 @@ const SearchBox = ({ onSubmit, params = null, ...props }) => {
         {({ handleSubmit, form, pristine, submitting, values }) => (
           <StyledForm onSubmit={handleSubmit}>
             <StyledFormGroup>
-              <Field name="t">
+              <Field name="s">
                 {({ input, meta }) => (
                   <TextField
                     id="filled-basic"
@@ -87,7 +87,7 @@ const SearchBox = ({ onSubmit, params = null, ...props }) => {
                   <StyledButton
                     variant="contained"
                     endIcon={<SearchIcon />}
-                    disabled={pristine || submitting || !values.t}
+                    disabled={pristine || submitting || !values.s}
                     type="submit"
                   >
                     Search

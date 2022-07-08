@@ -1,5 +1,6 @@
 import { Routes as RouterRoutes, Route } from "react-router-dom";
 import SearchPage from "./pages/search/SearchPage";
+import HomePage from "./pages/home/HomePage";
 import RoutePage from "./RoutePage";
 
 const Routes = ({ ...props }) => {
@@ -13,14 +14,7 @@ const Routes = ({ ...props }) => {
           </RoutePage>
         }
       />
-      <Route
-        path="*"
-        element={
-          <RoutePage>
-            <>Wildcard</>
-          </RoutePage>
-        }
-      />
+      <Route path="*" element={<HomePage />} />
     </RouterRoutes>
   );
 };

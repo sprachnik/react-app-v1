@@ -11,6 +11,7 @@ const useQuery = ({ query, load = false }) => {
 
   const runQuery = useCallback(
     async (newQuery = null) => {
+      let response = null;
       try {
         if (loadingRef.current.loading) return;
 
@@ -18,7 +19,7 @@ const useQuery = ({ query, load = false }) => {
 
         loadingRef.current.loading = true;
         setQueryState(() => ({ ...queryState, loading: true }));
-        const response = newQuery ? await newQuery() : await query();
+        response = newQuery ? await newQuery() : await query();
         setQueryState(() => ({
           ...queryState,
           data: response,
@@ -36,6 +37,7 @@ const useQuery = ({ query, load = false }) => {
         loading: false,
         load: false,
       };
+      return response;
     },
     [query, queryState]
   );
