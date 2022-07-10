@@ -7,11 +7,10 @@ import Typography from "@mui/material/Typography";
 import Menu from "@mui/material/Menu";
 import MenuIcon from "@mui/icons-material/Menu";
 import Container from "@mui/material/Container";
-import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
 import { useNavigate } from "react-router-dom";
 import styled from "styled-components";
-import colors from "../../components/colors";
+import colors from "../../../components/colors";
 
 const pages = [
   { label: "Search", link: "/" },

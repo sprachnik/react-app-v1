@@ -7,30 +7,36 @@ import {
 } from "@mui/material";
 import SearchIcon from "@mui/icons-material/Search";
 import styled from "styled-components";
-import colors from "../../components/colors";
+import colors from "../../../components/colors";
 import FilterAltIcon from "@mui/icons-material/FilterAlt";
+import { motion } from "framer-motion";
 
-const SearchBox = ({}) => {
+const SearchBox = () => {
   return (
-    <SearchBoxContainer>
-      <StyledFormControl variant="outlined">
-        <SearchInput
-          id="career-search"
-          placeholder="Explore pathways for other job types..."
-          endAdornment={
-            <AdornmentWrapper>
-              <InputAdornment position="start" style={{ margin: "0 auto" }}>
-                <StyledSearchIcon />
-              </InputAdornment>
-            </AdornmentWrapper>
-          }
-          variant="standard"
-        />
-      </StyledFormControl>
-      <ButtonWrapper>
-        <FilterButton variant="outlined" startIcon={<FilterIcon />} />
-      </ButtonWrapper>
-    </SearchBoxContainer>
+    <motion.div
+      initial={{ opacity: 0, y: -100 }}
+      animate={{ opacity: 1, y: 0 }}
+    >
+      <SearchBoxContainer>
+        <StyledFormControl variant="outlined">
+          <SearchInput
+            id="career-search"
+            placeholder="Explore pathways for other job types..."
+            endAdornment={
+              <AdornmentWrapper>
+                <InputAdornment position="start" style={{ margin: "0 auto" }}>
+                  <StyledSearchIcon />
+                </InputAdornment>
+              </AdornmentWrapper>
+            }
+            variant="standard"
+          />
+        </StyledFormControl>
+        <ButtonWrapper>
+          <FilterButton variant="outlined" startIcon={<FilterIcon />} />
+        </ButtonWrapper>
+      </SearchBoxContainer>
+    </motion.div>
   );
 };
 
@@ -38,7 +44,7 @@ const ButtonWrapper = styled.div`
   display: flex;
   align-items: center;
   align-content: center;
-  width: 15%;
+  margin: 0 0 0 1rem;
 `;
 
 const FilterButton = styled(Button)`
@@ -86,7 +92,7 @@ const SearchInput = styled(OutlinedInput)`
 `;
 
 const StyledFormControl = styled(FormControl)`
-  width: 85%;
+  width: 100%;
 `;
 
 export default SearchBox;
