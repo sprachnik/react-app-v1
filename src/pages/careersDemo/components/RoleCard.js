@@ -97,7 +97,7 @@ const InfoBox = styled.div`
 `;
 
 const StyledButton = styled(Button)`
-  background-color: ${colors.ikigaiGreenButton}!important;
+  background-color: ${colors.careersGreenButton}!important;
 `;
 
 export default RoleCard;

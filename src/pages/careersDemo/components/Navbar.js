@@ -14,7 +14,7 @@ import colors from "../../../components/colors";
 
 const pages = [
   { label: "Search", link: "/" },
-  { label: "Career Pathways", link: "/ikigai" },
+  { label: "Career Pathways", link: "/careers" },
 ];
 
 const ResponsiveAppBar = () => {
@@ -34,10 +34,10 @@ const ResponsiveAppBar = () => {
   );
 
   return (
-    <IkigaiAppBar position="static">
+    <CareersAppBar position="static">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <IkigaiLogo src="/IkigaiLogoSmall.png" alt="Logo" />
+          <CareersLogo src="/CareersLogoSmall.png" alt="Logo" />
           <CurrentPageBox>
             <Typography
               variant="h6"
@@ -82,7 +82,7 @@ const ResponsiveAppBar = () => {
           </MenuBox>
         </Toolbar>
       </Container>
-    </IkigaiAppBar>
+    </CareersAppBar>
   );
 };
 
@@ -93,12 +93,12 @@ const MenuBox = styled(Box)`
   align-self: center;
 `;
 
-const IkigaiAppBar = styled(AppBar)`
-  background-color: ${colors.ikigaiBlue}!important;
+const CareersAppBar = styled(AppBar)`
+  background-color: ${colors.careersBlue}!important;
   box-shadow: none !important;
 `;
 
-const IkigaiLogo = styled.img`
+const CareersLogo = styled.img`
   max-height: 70px;
   max-width: 70px;
 `;

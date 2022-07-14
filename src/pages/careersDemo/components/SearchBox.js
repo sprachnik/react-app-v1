@@ -53,7 +53,7 @@ const FilterButton = styled(Button)`
     margin: 0;
   }
   min-height: 56px;
-  background-color: ${colors.ikigaiOrange} !important;
+  background-color: ${colors.careersOrange} !important;
 `;
 
 const FilterIcon = styled(FilterAltIcon)`
@@ -71,7 +71,7 @@ const AdornmentWrapper = styled.div`
 `;
 
 const StyledSearchIcon = styled(SearchIcon)`
-  color: ${colors.ikigaiOrange};
+  color: ${colors.careersOrange};
   align-self: center;
 `;
 

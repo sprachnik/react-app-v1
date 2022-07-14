@@ -8,7 +8,7 @@ import { useState } from "react";
 import RolePicker from "./components/RolePicker";
 import { demoRoles } from "./components/demoRoles";
 
-const IkigaiDemoPage = ({ ...props }) => {
+const CareersDemoPage = ({ ...props }) => {
   const [currentPathway, setCurrentPathway] = useState("01");
   const [currentPathwayRoutes, setCurrentPathwayRoutes] = useState([
     { pathway: "01", name: "Machiney Mechanic" },
@@ -18,9 +18,9 @@ const IkigaiDemoPage = ({ ...props }) => {
     { pathway: "05", name: "Head of Engineering" },
   ]);
   return (
-    <Root id="ikigaiRoot">
+    <Root id="careersRoot">
       <Navbar />
-      <Container maxWidth="xl" style={{ backgroundColor: colors.ikigaiBlue }}>
+      <Container maxWidth="xl" style={{ backgroundColor: colors.careersBlue }}>
         <SearchBox />
         <Pathway
           currentPathway={currentPathway}
@@ -38,8 +38,8 @@ const IkigaiDemoPage = ({ ...props }) => {
 };
 
 const Root = styled.div`
-  background: ${colors.ikigaiBlue};
+  background: ${colors.careersBlue};
   height: 100%;
 `;
 
-export default IkigaiDemoPage;
+export default CareersDemoPage;

@@ -1,6 +1,6 @@
 import { Routes as RouterRoutes, Route } from "react-router-dom";
 import SearchPage from "./pages/search/SearchPage";
-import IkigaiDemoPage from "./pages/ikigaiDemo/IkigaiDemoPage";
+import CareersDemoPage from "./pages/careersDemo/CareersDemoPage";
 import RoutePage from "./RoutePage";
 
 const Routes = ({ ...props }) => {
@@ -14,7 +14,7 @@ const Routes = ({ ...props }) => {
           </RoutePage>
         }
       />
-      <Route path="/ikigai" element={<IkigaiDemoPage />} />
+      <Route path="/careers" element={<CareersDemoPage />} />
     </RouterRoutes>
   );
 };

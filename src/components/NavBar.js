@@ -16,7 +16,7 @@ import { useNavigate } from "react-router-dom";
 
 const pages = [
   { label: "Search", link: "/" },
-  { label: "Ikigai", link: "/ikigai" },
+  { label: "Careers", link: "/careers" },
 ];
 const settings = ["..."];
 

@@ -40,7 +40,7 @@ export default NumberCircle;
 const NumberContainer = styled(motion.div)`
   margin: 0 auto;
   background-color: ${({ isselected }) =>
-    isselected ? "white" : colors.ikigaiOrange};
+    isselected ? "white" : colors.careersOrange};
   padding: ${({ padding }) => (!!padding ? `${padding}` : "30px")};
   border-radius: 50%;
   width: ${({ width }) => (!!width ? `${width}` : "25px")};
@@ -56,6 +56,7 @@ const NumberContainer = styled(motion.div)`
   box-shadow: 0px 6px 11px 6px rgba(0, 0, 0, 0.4);`
       : ``}
   h6 {
-    color: ${({ isselected }) => (!isselected ? "white" : colors.ikigaiOrange)};
+    color: ${({ isselected }) =>
+      !isselected ? "white" : colors.careersOrange};
   }
 `;
